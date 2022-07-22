@@ -1,0 +1,129 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<style>
+    .first {
+        border: 2px solid black;
+        float :left;
+        padding: 20px;
+        text-align: center;
+        margin-left: 40px;
+        padding-top: 3px;
+    }
+
+    .second {
+        border: 2px solid cyan;
+        float : right;
+        padding: 20px;
+        text-align: center;
+        margin-right: 40px;
+        padding-top: 3px;
+    
+    }
+
+    .third {
+        border : 2px solid blue;
+        margin-left: 450px;
+        margin-right: 450px;
+        padding: 20px;
+        text-align: center;
+        
+        
+    }
+
+    .add {
+        color: black;
+        background-color: blue;
+        
+    }
+    .delete {
+        color: black;
+        background-color: red;
+        text-decoration: none;
+    }
+
+    
+</style>
+<body>
+    {% for Customer in customer %}
+    <div class="first" name="name" >
+        <h3>Puma snickers</h3>
+        <h5>size 42</h5>
+        <h5>$400</h5>
+        <button class="delete"><a href="/delete/{{ Customer.id }}">delete</a></button>
+        <button class="add"><a>addcart</a></button>
+    </div>
+
+    <div class="second" name="name">
+        <h3>Adidas snickers</h3>
+        <h5>size 42</h5>
+        <h5>$400</h5>
+        <button class="delete"><a href="/delete/{{ Customer.id }}">delete</a></button>
+        <button class="add"><a>addcart</a></button>
+    </div>
+
+    <div class="third" name="name">
+        <h3>Dior snickers</h3>
+        <h5>size 42</h5>
+        <h5>$400</h5>
+        <button class="delete"><a href="/delete/{{ Customer.id }}">delete</a></button>
+        <button class="add"><a>addcart</a></button>
+    </div>
+    <div class="first" name="name" >
+        <h3>Nike snickers</h3>
+        <h5>size 42</h5>
+        <h5>$400</h5>
+        <button class="delete"><a href="/delete/{{ Customer.id }}">delete</a></button>
+        <button class="add"><a>addcart</a></button>
+    </div>
+
+    <div class="second" name="name">
+        <h3>wolfe snickers</h3>
+        <h5>size 42</h5>
+        <h5>$400</h5>
+        <button class="delete"><a href="/delete/{{ Customer.id }}">delete</a></button>
+        <button class="add"><a>addcart</a></button>
+    </div>
+
+    <div class="third"  name="name">
+        <h3> snickers</h3>
+        <h5>size 42</h5>
+        <h5>$400</h5>
+        <button class="delete"><a href="/delete/{{ Customer.id }}">delete</a></button>
+        <button class="add"><a>addcart</a></button>
+    </div>
+    <div class="first"  name="name">
+        <h3>Puma snickers</h3>
+        <h5>size 42</h5>
+        <h5>$400</h5>
+        <button class="delete"><a href="/delete/{{ Customer.id }}">delete</a></button>
+        <button class="add"><a>addcart</a></button>
+    </div>
+    
+
+    <div class="second"  name="name">
+        <h3>Adidas snickers</h3>
+        <h5>size 42</h5>
+        <h5>$400</h5>
+        <button class="delete"><a href="/delete/Templates{{ Customer.id }}">delete</a></button>
+        <button class="add"><a>addcart</a></button>
+    </div>
+
+    <div class="third"  name="name">
+        <h3>Dior snickers</h3>
+        <h5>size 42</h5>
+        <h5>$400</h5>
+        <button class="delete"><a href="/delete/{{ Customer.id }}">delete</a></button>
+        <button class="add"><a>addcart</a></button>
+    </div>
+    {% endfor %}
+   
+</body>
+</html>
